@@ -68,19 +68,7 @@ name.keyup(()=>{
 
 //******************** 2ND TASK : SHOW - HIDE TEXTAREA FOR OTHER **************************//
 
-$('#title').after("<textarea>");
-
-$('#title').next().attr({
-
-    id :'other-title',
-    placeholder:'Your Job Role',
-
-  });
-
-$('#other-title').css('display','block');
 $('#other-title').hide();
-
-
 $('#title').on('change',()=>{
 
   if($('#title').val() === 'other'){
